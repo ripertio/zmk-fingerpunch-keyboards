@@ -1,11 +1,11 @@
 file_format: "1"
-id: swweeep
-name: swweeep
+id: riboard
+name: riboard
 type: shield
 url: https://github.com/sadekbaroudi/sweep36
 requires: [pro_micro]
 features:
   - keys
 siblings:
-  - swweeep_left
-  - swweeep_right
+  - riboard_left
+  - riboard_right
