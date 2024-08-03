@@ -5,12 +5,12 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define DEFAULT 0
-# define NAV     1
-# define SYM     2
-# define FUNC    3
-# define MEDIA   4
-# define NUMLFT  5
-# define NUMRHT  6
+#define NAV     1
+#define SYM     2
+#define FUNC    3
+#define MEDIA   4
+#define NUMLFT  5
+#define NUMRHT  6
 
 &caps_word {
     continue-list = <UNDERSCORE MINUS>;
@@ -49,12 +49,15 @@
     keymap {
         compatible = "zmk,keymap";
 
+            keymap {
+        compatible = "zmk,keymap";
+
         default_layer {
             bindings = <
-&kp J         &kp D               &kp U             &kp A           &kp X          &kp P             &kp H       &kp L       &kp M                &kp W
-&hm LSHIFT C  &hm LEFT_CONTROL T  &hm LALT I        &hs LGUI E      &kp O          &kp B             &hs RGUI N  &hm RALT R  &hm RIGHT_CONTROL S  &hm RSHIFT G
-&kp F         &kp V               &kp LEFT_BRACKET  &kp APOSTROPHE  &kp SEMICOLON  &kp Y             &kp Z       &kp Q       &kp T                &kp K
-                                  &lt NUMLFT        &kp SPACE       &lt SYM        &lt NAV  &kp ENT  &kp BSPC
+    &kp Q        &kp W        &kp F       &kp P         &kp B                                &lkp J  &kp L        &kp U         &kp Y       &kp SEMI
+    &hm LCTL A   &hm LGUI R   &hm LALT S  &hs LSHIFT T  &kp G                                       &kp M         &hs RSHIFT N &hm RALT E    &hm RGUI I  &hm RCTL O
+    &kp Z        &kp X        &kp C       &kp D         &kp V                                       &kp K         &kp H        &kp COMMA     &kp DOT     &kp FSLH
+                                          &kp DEL       &kp A  &kp TAP  &kp BSPC   &kp SPACE &kp SQT
             >;
         };
     };
